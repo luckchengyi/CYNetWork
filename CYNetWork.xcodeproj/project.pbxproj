@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4A34AF6B225F012A9D077E /* libPods-CYNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F41A3D06EFEA5D434C2FB1 /* libPods-CYNetWork.a */; };
 		2D2CA80C20EDBAFF00D4FF4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CA80B20EDBAFF00D4FF4D /* AppDelegate.m */; };
 		2D2CA80F20EDBAFF00D4FF4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CA80E20EDBAFF00D4FF4D /* ViewController.m */; };
 		2D2CA81220EDBAFF00D4FF4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2CA81020EDBAFF00D4FF4D /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 		2D2CA82A20EDBAFF00D4FF4D /* CYNetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYNetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2CA82E20EDBAFF00D4FF4D /* CYNetWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNetWorkUITests.m; sourceTree = "<group>"; };
 		2D2CA83020EDBAFF00D4FF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12568A24AACB44A0ED8D1E8 /* Pods-CYNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYNetWork/Pods-CYNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		A6F41A3D06EFEA5D434C2FB1 /* libPods-CYNetWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYNetWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB73C762447BD0986617937B /* Pods-CYNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYNetWork/Pods-CYNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4A34AF6B225F012A9D077E /* libPods-CYNetWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		156ADEDD42056F02C0BF4CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6F41A3D06EFEA5D434C2FB1 /* libPods-CYNetWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D2CA7FE20EDBAFE00D4FF4D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				2D2CA82220EDBAFF00D4FF4D /* CYNetWorkTests */,
 				2D2CA82D20EDBAFF00D4FF4D /* CYNetWorkUITests */,
 				2D2CA80820EDBAFE00D4FF4D /* Products */,
+				C6A10DBA3BC13D78FB585063 /* Pods */,
+				156ADEDD42056F02C0BF4CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +147,15 @@
 			path = CYNetWorkUITests;
 			sourceTree = "<group>";
 		};
+		C6A10DBA3BC13D78FB585063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB73C762447BD0986617937B /* Pods-CYNetWork.debug.xcconfig */,
+				A12568A24AACB44A0ED8D1E8 /* Pods-CYNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2CA83320EDBAFF00D4FF4D /* Build configuration list for PBXNativeTarget "CYNetWork" */;
 			buildPhases = (
+				C9596E391AFE64B48FE9635B /* [CP] Check Pods Manifest.lock */,
 				2D2CA80320EDBAFE00D4FF4D /* Sources */,
 				2D2CA80420EDBAFE00D4FF4D /* Frameworks */,
 				2D2CA80520EDBAFE00D4FF4D /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9596E391AFE64B48FE9635B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYNetWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D2CA80320EDBAFE00D4FF4D /* Sources */ = {
@@ -431,14 +477,12 @@
 		};
 		2D2CA83420EDBAFF00D4FF4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB73C762447BD0986617937B /* Pods-CYNetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,14 +491,12 @@
 		};
 		2D2CA83520EDBAFF00D4FF4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12568A24AACB44A0ED8D1E8 /* Pods-CYNetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,11 +509,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWorkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWorkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,11 +523,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWorkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWorkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,11 +536,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWorkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWorkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,11 +549,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CYNetWorkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WM.CYNetWorkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
