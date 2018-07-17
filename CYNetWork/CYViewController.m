@@ -31,7 +31,7 @@
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setObject:@"15212776560" forKey:@"mobile"];
     [dic setObject:@"0086" forKey:@"phone_region"];
-    [dic setObject:@"123451" forKey:@"password"];
+    [dic setObject:@"123456" forKey:@"password"];
     [dic setObject:@"56A8DA3DB4922618323D6535BA8E5772" forKey:@"_sign_"];
     [dic setObject:@"com.weimob.mdstore" forKey:@"appIdentifier"];
 
@@ -39,9 +39,9 @@
         [self data:response.data];
     }]];
     
-    [[NetWorkManager shareManager]post:[NetRequest requestWith:@"http://mxdapi.mengdian.com/prettyStoreApp/userProfilePull" params:nil result:^(BOOL success, NetResponse *response) {
-        NSLog(@"%@",response.data);
-    }]];
+//    [[NetWorkManager shareManager]post:[NetRequest requestWith:@"http://mxdapi.mengdian.com/prettyStoreApp/userProfilePull" params:nil result:^(BOOL success, NetResponse *response) {
+//        NSLog(@"%@",response.data);
+//    }]];
 }
 
 -(void)data:(id)data{

@@ -25,18 +25,18 @@
 
 -(void)start{
     self.request.retryCount ++;
+        __weak __typeof(self)weakSelf = self;
     AFNetworkReachabilityManager *recachabilityManager = [AFNetworkReachabilityManager sharedManager];
     [recachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status==-1 || status== 0) {
             NSError *error = [NSError errorWithDomain:@"当前网络不可用" code:-8888888 userInfo:nil];
-            [self callError:error];
+            [weakSelf callError:error];
             return;
         }
     }];
-      [recachabilityManager startMonitoring];
-//    __weak __typeof(self)weakSelf = self;
+    [recachabilityManager startMonitoring];
     NSURLSessionTask *task = [[NetWorkManager shareManager]POST:self.request.url parameters:self.request.params progress:^(NSProgress * _Nonnull uploadProgress) {
-        NSLog(@"----------%lld",uploadProgress.completedUnitCount);
+        NSLog(@"%lld",uploadProgress.completedUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self callSuccess:responseObject];
 

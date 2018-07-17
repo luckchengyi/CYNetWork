@@ -56,6 +56,7 @@ static NetWorkManager *_manage = nil;
         _manage.responseSerializer.acceptableContentTypes =  [_manage.responseSerializer.acceptableContentTypes setByAddingObjectsFromSet:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", @"text/plain",@"application/atom+xml",@"application/xml",@"text/xml",nil]];
         [_manage.requestSerializer setValue:@"application/json; encoding=utf-8" forHTTPHeaderField:@"Content-Type"];
         [_manage.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [_manage.requestSerializer setValue:@"haoshuai" forHTTPHeaderField:@"gaochengyi"];
         _manage.cusBaseURL = baseURL;
         
     });
