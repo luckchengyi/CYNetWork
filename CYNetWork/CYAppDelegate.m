@@ -6,13 +6,13 @@
 //  Copyright © 2018年 高程宜. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CYAppDelegate.h"
 
-@interface AppDelegate ()
+@interface CYAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation CYAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -177,7 +177,7 @@
                        failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"POST" URLString:URLString parameters:parameters uploadProgress:uploadProgress downloadProgress:nil success:success failure:failure];
-
+https://www.jianshu.com/apps/redirect?utm_source=side-banner-click
     [dataTask resume];
 
     return dataTask;
