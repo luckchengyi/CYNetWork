@@ -170,19 +170,19 @@
 		2D3AA17D20FDDAB3002EFAFF /* CYNet */ = {
 			isa = PBXGroup;
 			children = (
+				2D3AA18620FDDAB3002EFAFF /* DataTurn.h */,
 				2D3AA17E20FDDAB3002EFAFF /* DataTurn.m */,
+				2D3AA18520FDDAB3002EFAFF /* NetTask.h */,
 				2D3AA17F20FDDAB3002EFAFF /* NetTask.m */,
 				2D3AA18020FDDAB3002EFAFF /* NetResponse.h */,
-				2D3AA18120FDDAB3002EFAFF /* NetWorkManager.h */,
-				2D3AA18220FDDAB3002EFAFF /* NetHelper.m */,
-				2D3AA18320FDDAB3002EFAFF /* NetRequest.h */,
 				2D3AA18420FDDAB3002EFAFF /* NetResponse.m */,
-				2D3AA18520FDDAB3002EFAFF /* NetTask.h */,
-				2D3AA18620FDDAB3002EFAFF /* DataTurn.h */,
-				2D3AA18720FDDAB3002EFAFF /* NetHelper.h */,
-				2D3AA18820FDDAB3002EFAFF /* PrefixHeader.pch */,
-				2D3AA18920FDDAB3002EFAFF /* NetWorkManager.m */,
+				2D3AA18320FDDAB3002EFAFF /* NetRequest.h */,
 				2D3AA18A20FDDAB3002EFAFF /* NetRequest.m */,
+				2D3AA18120FDDAB3002EFAFF /* NetWorkManager.h */,
+				2D3AA18920FDDAB3002EFAFF /* NetWorkManager.m */,
+				2D3AA18720FDDAB3002EFAFF /* NetHelper.h */,
+				2D3AA18220FDDAB3002EFAFF /* NetHelper.m */,
+				2D3AA18820FDDAB3002EFAFF /* PrefixHeader.pch */,
 			);
 			path = CYNet;
 			sourceTree = "<group>";
